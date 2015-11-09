@@ -1,0 +1,5 @@
+<button type="button" class="btn btn-primary btn-sm" ng-click="checkAtiv(tarefa)">
+  <i class="fa fa-check-square-o" ng-if="tarefa.feito"></i>
+  <i class="fa fa-square-o" ng-if="!tarefa.feito"></i>
+</button>
+<span>{{tarefa.titulo}}</span>

@@ -1,0 +1,22 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<i class="fa fa-reorder"></i> Atividades
+	</div>
+	<div class="panel-body">
+		<ul class="list-unstyled">
+			<li ng-repeat="ativ in source">
+				<a ng-click="selectCallback({task:ativ})">{{ativ.atividade}}</a>
+				<span class="badge badge-default pull-right">{{ativ.tarefas.length}}</span>
+			</li>
+		</ul>
+	</div>
+	<div class="panel-footer">
+		<form class="form-inline">
+		  <div class="form-group">
+		    <label>Nova atividade</label>
+		    <input type="text" ng-model="nova.atividade">
+		  </div>
+		  <button class="btn btn-primary btn-block" ng-click="newTask(nova)">adicionar</button>
+		</form>        
+	</div>
+</div>

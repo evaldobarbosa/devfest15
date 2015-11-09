@@ -1,0 +1,16 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h4>#{{atividade.id}} {{atividade.atividade}}</h4>
+	</div>
+	<div class="panel-body">
+      <input type="text" class="form-control" ng-model="atual.titulo">
+      <button class="btn btn-success btn-block" ng-click="append(atual)">add</button>
+	</div>
+	<div class="panel-footer">
+		<ul class="list-group">
+		  <li class="list-group-item" ng-repeat="c in atividade.tarefas">
+		    <todo-item tarefa="c"></todo-item>
+		  </li>
+		</ul>
+	</div>
+</div>
